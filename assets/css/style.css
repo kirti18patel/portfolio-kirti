@@ -107,3 +107,46 @@ header nav a:hover{
     border: 2px solid transparent;
     color: white;
 }
+
+/* social media icons styling */
+.social-icons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    z-index: 100000;
+}
+.icons{
+    text-align: left;
+    display: block;
+    margin: 4px 0;
+    border-radius: 50% 0 0 50%;
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px gray;
+    transition: 0.5s;
+    
+}
+.icons:hover{
+    transform: translateY(-3px);
+    opacity: 1;
+}
+.fa{
+    font-size: 1.5em;
+    color: white;
+    padding: 15px 10px 15px 15px; 
+}
+.facebook{
+    background: #4267B2;
+}
+.linkedin{
+    background: #2867B2;
+}
+.instagram{
+    background: linear-gradient(135deg, #405DE6 ,#5851DB,#833AB4, #C13584,#E1306C, #F56040, #F77737, #FCAF45, #FFDC80 );
+}
+.github{
+    background: black;
+}
+.twitter{
+    background: #1DA1F2;
+}
