@@ -196,3 +196,18 @@ hr{
 .aboutme-img img{
     max-height: 100%;
 }
+
+/* footer styling */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin: auto;
+    font-size: 0.8em;
+    color: var(--primary-lightcolor);
+    background-color: var(--primary-darkercolor);
+}
+footer h3 a{
+    color: var(--primary-lightcolor);
+    text-decoration: none;
+}
