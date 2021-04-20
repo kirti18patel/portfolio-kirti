@@ -15,22 +15,21 @@
 </head>
 <body>
     <!-- hero section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <img src="./assets/images/bg.jpg" alt="sunset sky with clouds, mountains and road">
-        <h1>CHEERS TO THE COLORFUL LIFE ! <br><span>- ΛＫＷｏｒｋｓ</span></h1>
+        <h1>CHEERS TO THE <span class="colorful"> COLORFUL </span>LIFE ! <br><span class="akworks">- ΛＫＷｏｒｋｓ</span></h1>
     </section>
 
     <!-- header- logo and navigation -->
     <header>
-        <a href="#" class="logo">ΛＫＷｏｒｋｓ</a>
+        <a href="#hero" class="logo">ΛＫＷｏｒｋｓ</a>
         <nav>
-            <a href="#hero">Home</a>
             <a href="#about-me">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Process</a>
-            <a href="#contact-me">Contact Me</a>
-            <!-- <a href="mailto:kirti18patel@yahoo.com" class="hire">PROJECT REQUEST</a> -->
+            <a href="#projects">Projects</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#process">Process</a>
+            <a href="#contact-me">Contact</a>
+            <a href="mailto:kirti18patel@yahoo.com" class="hire">PROJECT REQUEST</a>
         </nav>
     </header>
 
@@ -72,19 +71,47 @@
         </div>
     </section>
 
+    <!-- Projects section -->
+    <section id="projects">
+        <div class="title-text">
+            <p>Projects</p>
+        </div>
+        <div class="project-page">
+            <div class="project-card">
+                <a href="#">
+                    <img src="./assets/images/web1.jpg" alt="">
+                    Learn more ></a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                <img src="./assets/images/web2.png" alt="">
+                Learn more ></a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                <img src="./assets/images/web3.png" alt="">
+                Learn more ></a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                <img src="./assets/images/web4.png" alt="">
+                Learn more ></a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact me -->
     <section id="contact-me">
         <div class="title-text">
             <p>Contact</p>
         </div>
         <div class="contact-content">
-            
             <div class="phone-email">
                 <h3><i class="fa fa-phone" aria-hidden="true"></i>+1(514) 574-8186</h3>
                 <h3><i class="fa fa-envelope" aria-hidden="true"></i>kirti18patel@yahoo.com</h3>
             </div>
             <form>
-                <label for="heading">You can also send me your e-mail and project explaination. I will revert you soon.</label>
+                <label for="heading">You can also send me your e-mail and a brief project explaination. I will revert you soon.</label>
                 <input type="text" placeholder="Enter your email..." />
                 <input type="text" placeholder="Enter your message..."/>
                 <button type="submit">Submit</button>
