@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 /* colors used in website */
 :root{
     --primary-lightcolor: #ddc9b4;
@@ -38,9 +41,12 @@
     border-radius: 10px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,0.3);
+    font-family: 'Volkhov', cursive;
+    transition: 2s ease;
 }
 .hero h1 span{
     font-size: 0.6em;  
+    letter-spacing: -0.1em;
 }
 
 /* navigation bar styling */
@@ -69,6 +75,7 @@ header .logo{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.3em;
 }
 header nav{
     display: flex;
@@ -101,13 +108,12 @@ header nav a:hover{
     background: var(--primary-darkercolor);
     padding: 10px 20px;
     border-radius: 30px;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5) inset;
-    letter-spacing: 0.20em;
 }
 .hire:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-    border: 2px solid transparent;
-    color: white;
+    box-shadow: none;
 }
 
 /* social media icons styling */
@@ -154,14 +160,18 @@ header nav a:hover{
     background: #1DA1F2;
 }
 
-/* about me section styling */
 #about-me{
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* about me section styling */
+.aboutme-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 10%;
-    background-color: rgba(255,255,255,0.8);
 }
 .aboutme-text{
     position: relative;
@@ -203,7 +213,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
-    margin: auto;
+    margin-top: 0;
     font-size: 0.8em;
     color: var(--primary-lightcolor);
     background: var(--primary-darkercolor);
@@ -211,4 +221,109 @@ footer{
 footer h3 a{
     color: var(--primary-lightcolor);
     text-decoration: none;
+}
+
+
+/* contact me section styling */
+#contact-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(white, white, white,var(--primary-darkercolor));
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+/* form elements styling */
+.contact-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    min-height: 300px;
+    background: white;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px inset;
+    padding-top: 10px;
+}
+.contact-content form label{
+    width: 80%;
+    text-align: left;
+    font-size: 1.1em;
+    color: black;
+}
+.contact-content form input{
+    border: 1px solid var(--green);
+    border-radius: 7px;
+    width: 85%;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    outline: none;
+}
+
+.contact-content form button{
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--green);
+    outline: none;
+    margin: 10px;
+    color: white;
+    font-size: 1.3em;
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.contact-content .phone-email,
+.contact-content .phone-email .fa{
+    color: var(--green);
+}
+
+/* styling of form element when focus or hover */
+.contact-content form input:focus{
+    border: 3px solid var(--green);
+}
+.contact-content form button:hover{
+    box-shadow:none;
+}
+.contact-content .phone-email .fa:hover{
+    transform: translateY(-3px);
+}
+
+/* title of section with leaf styling */
+.title-text{
+text-align: center;
+padding: 40px 0 0 0;
+}
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: var(--green);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(var(--green),white);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
 }
