@@ -12,7 +12,7 @@ body{
     --primary-darkcolor: #BCAC9B;
     --primary-darkercolor:#7A6C5D;
     --green: #2A3D45;
-    --secondary-background: #F2EBE3;
+    --secondary-background: #FBF9F6;
 
 }
 
@@ -47,7 +47,7 @@ body{
 }
 .hero .colorful{
     
-    background: -webkit-linear-gradient( -45deg,#9400D3 ,#4B0082,#0000FF, #00FF00,#FFFF00, #FF7F00, #FF0000);
+    background: -webkit-linear-gradient( -45deg,#9400D3 ,#4B0082,#0000FF, #00FF00,#FFFF00, #FF7F00, #FF0000, #FF0000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -391,4 +391,36 @@ padding: 40px 0 0 0;
 .project-page .project-card a{
     color: blue;
     text-decoration: none;
+}
+
+
+/* testimonials styling */
+
+#testimonials{
+    width: 100%;
+    padding: 40px 25px;
+    background: var(--secondary-background);
+    display: block;
+}
+#testimonials .samples{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#testimonials .samples div{
+    max-width: 30%;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 2%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1) inset;
+}
+#testimonials h2{
+    color: var(--green);
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
 }
