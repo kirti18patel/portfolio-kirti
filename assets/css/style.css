@@ -424,3 +424,14 @@ padding: 40px 0 0 0;
     text-align: center;
     padding: 10px 0;
 }
+
+.testimonial-card img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.testimonial-card .fa{
+    color: #2867B2;
+    font-size: 16px;
+}
